@@ -47,7 +47,6 @@ export default function PaginaInicial() {
               backgroundColor: appConfig.theme.colors.neutrals[700],
             }}
           >
-            {/* Formulário */}
             <Box
               as="form"
               onSubmit={function (infosDoEvento) {
@@ -61,15 +60,13 @@ export default function PaginaInicial() {
             >
               <Titulo tag="h2">Bem vindo(a) de volta!</Titulo>
               <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[200] }}>
-               {appConfig.name}
+                {appConfig.name}
               </Text>
   
               <TextField
                 value={username}
                 onChange={function (event){
-                  //qual o valor?
                   const valor = event.target.value;
-                  //trocando o valor
                   setUsername(valor);
                 }}
                 fullWidth
